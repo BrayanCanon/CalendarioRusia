@@ -25,12 +25,18 @@ public class AuditBean {
 //		return "index";
 //	}
 
+	
+	
+	
 	public DataModel<Audit> getListaAuditoria() {
 		List<Audit> lista = new AuditDaoImpl().listado();
 		listaAuditoria = new ListDataModel<Audit>(lista);
 		return listaAuditoria;
 	}
 
+	
+	
+	
 	public void adicionarAuditoria(String operation,int tableId,String tableName,int userId) 
 	{
 		auditoria = new Audit();
