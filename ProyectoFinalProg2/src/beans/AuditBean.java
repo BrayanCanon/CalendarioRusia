@@ -28,6 +28,12 @@ public class AuditBean {
 	
 	
 	
+	
+	//Comentario Prueba
+	
+	
+	
+	
 	public DataModel<Audit> getListaAuditoria() {
 		List<Audit> lista = new AuditDaoImpl().listado();
 		listaAuditoria = new ListDataModel<Audit>(lista);
